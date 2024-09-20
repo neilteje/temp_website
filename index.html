@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Teje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a; /* Dark gray, almost black background */
+            color: #e0e0e0; /* Light gray text for contrast */
+            padding: 20px;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        h1, h2 {
+            margin: 0;
+            color: #ffffff; /* White color for headings */
+        }
+        .email {
+            font-size: 0.9em;
+            color: #b0b0b0; /* Slightly darker than body text */
+        }
+        .footer {
+            text-align: center;
+            font-style: italic;
+            color: #b0b0b0; /* Slightly darker than body text */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="/linkedinpfp.jpeg" alt="Profile Picture">
+            <div>
+                <h1>Neil Teje</h1>
+                <p class="email">neilteje@gmail.com</p>
+            </div>
+        </div>
+
+        <p>Hey, I'm Neil. I'm interning on TensorRT at NVIDIA!</p>
+
+<h2>Interests</h2>
+<p>I've always been driven by a deep curiosity for how things work, which is why I find myself constantly learning and exploring new technologies. Recently, my focus has been on combining machine learning with real-time systems, which has led me to some fascinating projects involving video streaming, GPU acceleration, and optimization techniques. I love the challenge of turning complex problems into elegant solutions—it's like piecing together a puzzle where every bit of performance counts.</p>
+
+<p>Outside of work, I'm a big fan of spontaneous adventures with friends, experimenting with new ideas at hackathons, coming up with new startup ideas, and diving into my passion for tennis and VALORANT. I’m also a sucker for another milk tea drink and long naps. I believe in creating things that leave a lasting impact and living in the moment as much as I can. If you share similar passions, I'd love to connect!</p>
+
+<h2>Elsewhere</h2>
+<p>You can find me on <a href="https://www.linkedin.com/in/neilteje" target="_blank">LinkedIn</a>, <a href="https://github.com/neilteje" target="_blank">GitHub</a>, and <a href="https://twitter.com/itsTeilio" target="_blank">X (Twitter)</a>.</p>
+
+<h2>Experience</h2>
+
+<h3>NVIDIA</h3>
+<p><em>Deep Learning Software Engineer Intern - TensorRT</em></p>
+
+<h3>Tesla</h3>
+<p><em>Autopilot Engineer Intern - Autopilot and Optimus Engineering</em></p>
+
+<h3>IBM Research</h3>
+<p><em>Artificial Intelligence Researcher - Hybrid Cloud & AI Group</em></p>
+
+<h3>NBC Universal</h3>
+<p><em>Software Engineer Intern - PeacockTV Client-Side Team</em></p>
+
+<h3>Forcepoint</h3>
+<p><em>Software Engineer Intern - Cross-domain TTC Team</em></p>
+
+
+</div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit', 
+                hour12: true,
+                timeZone: 'America/Chicago'
+            };
+            const timeString = now.toLocaleTimeString('en-US', options);
+            const dateString = now.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            document.getElementById('datetime').textContent = `${timeString} - Champaign, IL`;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+    </script>
+</body>
+</html>
